@@ -34,3 +34,5 @@
 <!-- 이전 커밋 메세지를 수정하고 싶으면
 git rebase -i --root / pick->reword -->
 
+# GUI를 사용해 commit 하는 방법
+## SOURCE CONTROL 에서 할 수 있음
