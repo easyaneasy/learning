@@ -36,10 +36,14 @@
 <!-- 이전 커밋 메세지를 수정하고 싶으면
 git rebase -i --root / pick->reword -->
 
+<br>
+
 # GUI를 사용해 commit 하는 방법
 ## SOURCE CONTROL 에서 할 수 있음
 
-## git log 보다 git graph 다운받아서 source control에서 확인하는게 쉽다.
+## `git log` 보다 git graph 다운받아서 source control에서 확인하는게 쉽다.
+
+<br>
 
 # .gitignore
 
@@ -49,9 +53,10 @@ git rebase -i --root / pick->reword -->
 ## .gitignore의 주의사항은 무엇인가?
 - 한번 commit한 파일은 .gitignore에 추가해도 제외되지 않는다.
 
-## gitignore.io 는 어떤 서비스인가?
+## gitignore.io는 어떤 서비스인가?
 - 사용하는 프로그래밍 언어, 기술에 적합한 .gitignore 파일을 자동으로 생성
 
+<br>
 
 # github
 
@@ -71,3 +76,26 @@ git rebase -i --root / pick->reword -->
   `git push origin main`
 - [x] 원격 저장소 파일 생성
 - [x] 지역 저장소 <- 원격 저장소 Pull
+  `git pull origin main`
+
+  ## git push origin main에서 origin은 무엇인가?
+- `git push <원격저장소명> <브랜치명>`
+- `git remote add <원격저장소명> <원격저장소주소>`
+- `origin`이라는 원격저장소명은 관습적인 이름. (처음 연결한)
+
+<br>
+
+## 원격 저장소란 무엇인가? (내 답변)
+> 내 컴퓨터(지역 저장소)가 아닌 웹 상에서 관리되는 저장소
+
+## 지역 저장소와 원격 저장소의 구분 *(내 답변)
+> 지역 저장소는 개인 작업 공간이지만 원격 저장소는 함께 협업이 가능하다.
+
+## 지역 저장소와 원격 저장소의 동기화란 무엇인가? (내 답변)
+> 각각의 저장소가 같은 상태를 유지하는 것
+
+
+
+
+
+
