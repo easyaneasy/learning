@@ -51,3 +51,23 @@ git rebase -i --root / pick->reword -->
 
 ## gitignore.io 는 어떤 서비스인가?
 - 사용하는 프로그래밍 언어, 기술에 적합한 .gitignore 파일을 자동으로 생성
+
+
+# github
+
+## 원격 저장소 생성, 연결, 동기화
+1. 원격 저장소 생성
+2. 지역 저장소 - 원격 저장소 연결
+3. 지역 저장소 -> 원격 저장소 Push
+4. 원격 저장소 파일 생성
+5. 지역 저장소 <- 원격 저장소 Pull
+
+## [실습] 혼자서 원격 저장소 생성, 연결, 동기화 해보기
+원격 저장소 생성
+- [x] 원격 저장소 생성
+- [x] 지역 저장소 - 원격 저장소 연결
+  `git remote add origin https://github.com/easyaneasy/eee.git`
+- [x] 지역 저장소 -> 원격 저장소 Push
+  `git push origin main`
+- [x] 원격 저장소 파일 생성
+- [ ] 지역 저장소 <- 원격 저장소 Pull
