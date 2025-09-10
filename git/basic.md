@@ -38,3 +38,14 @@ git rebase -i --root / pick->reword -->
 ## SOURCE CONTROL 에서 할 수 있음
 
 ## git log 보다 git graph 다운받아서 source control에서 확인하는게 쉽다.
+
+# .gitignore
+
+## 어떤 파일인가? 역할이 무엇인가?
+- git 프로젝트로 관리하지 않을 파일과 폴더를 기록
+
+## .gitignore의 주의사항은 무엇인가?
+- 한번 commit한 파일은 .gitignore에 추가해도 제외되지 않는다.
+
+## gitignore.io 는 어떤 서비스인가?
+- 사용하는 프로그래밍 언어, 기술에 적합한 .gitignore 파일을 자동으로 생성
