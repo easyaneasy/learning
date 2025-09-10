@@ -21,14 +21,14 @@
 # 깃 명령어
 
 ## 변경된 파일을 스테이징 영역으로 이동하는 명령어
-- git add 파일명
-- git add . (모든 파일 추가)
+- `git add 파일명`
+- `git add .` : 전체 파일을 이동
 
 ## 스테이징 영역에 있는 파일을 기록(커밋)하는 명령어
-- git commit
-- git commit -m "커밋 메세지"
+- `git commit`
+- `git commit -m "커밋 메세지"` : 커밋 메세지와 함께 커밋
 
 ## 현재 파일 상태를 출력하는 명령어
-- git status
+- `git status`
 
 
