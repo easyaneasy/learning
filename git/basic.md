@@ -31,4 +31,6 @@
 ## 현재 파일 상태를 출력하는 명령어
 - `git status`
 
+<!-- 이전 커밋 메세지를 수정하고 싶으면
+git rebase -i --root / pick->reword -->
 
