@@ -36,3 +36,5 @@ git rebase -i --root / pick->reword -->
 
 # GUI를 사용해 commit 하는 방법
 ## SOURCE CONTROL 에서 할 수 있음
+
+## git log 보다 git graph 다운받아서 source control에서 확인하는게 쉽다.
