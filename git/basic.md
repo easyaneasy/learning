@@ -70,4 +70,4 @@ git rebase -i --root / pick->reword -->
 - [x] 지역 저장소 -> 원격 저장소 Push
   `git push origin main`
 - [x] 원격 저장소 파일 생성
-- [ ] 지역 저장소 <- 원격 저장소 Pull
+- [x] 지역 저장소 <- 원격 저장소 Pull
