@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+   
+    <p>폼태그 기본 구조</p>
+    <p>인풋태그 기본 구조</p>
+   
+    <form action="#">
+
+        <input type="text" name="text" value="기본값" placeholder="안내문구" required>
+        <!-- required : 필수 입력 값이라는 의미이다. -->
+        <input type="password" name="password"> 
+        <!-- password : 입력한 문자가 점으로 보임 -->
+        
+        <div>
+            <label for="ch1">체크박스 1</label> <!--for : input 태그의 id 입력-->
+            <input type="checkbox" id="ch1" value="체크박스 1" name="checkbox">
+
+            <label for="ch2">체크박스 2</label>
+            <input type="checkbox" id="ch2" value="체크박스 2" name="checkbox">
+        </div> 
+
+        <div>
+            <label for="r1">라디오 1</label>
+            <input type="radio" id="r1" value="라디오 1" name="radio">
+
+            <label for="r2">라디오 2</label>
+            <input type="radio" id="r2" value="라디오 2" name="radio">
+
+            <!-- name : 일단 그룹화 용도라고 생각 -->
+        </div>
+
+        <div>
+            <!-- input태그에는 다양한 타입이 있음 -->
+            <input type="file">
+            <input type="date">
+            <input type="datetime">
+            <input type="color">
+
+            <!-- select와 option / ul과 li의 관계와 유사함-->
+            <select name="" id="">
+                <option value="">국가</option>
+                <option value="">대한민국</option>
+                <option value="">미국</option>
+                <option value="">중국</option>
+            </select>
+        </div>
+        
+        <input type="submit">
+
+    </form>
+</body>
+</html>
