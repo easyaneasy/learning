@@ -1,28 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--요소의 구조-->
     <a href="https://naver.com">naver.com</a>
-    <p> &lt;태그 속성 = "값"&gt; 내용 &lt;태그&gt; </p>
-    
+    <p>&lt;태그 속성 = "값"&gt; 내용 &lt;태그&gt;</p>
+
     <!--태그 종류-->
     <h1>1. 태그(Tags)</h1>
     <h1>마크다운의 #</h1>
-    <h2>마크다운의 ##</h2>    
+    <h2>마크다운의 ##</h2>
     <h3>마크다운의 ###</h3>
     <h6>마크다운의 ######</h6>
-    <p>일반적인 텍스트(문단)를 표현</p>  <!--단락(Paragraph)-->
+    <p>일반적인 텍스트(문단)를 표현</p>
+    <!--단락(Paragraph)-->
     <a>마크다운의 []()</a>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2aRJR6dWUGsjhkUzKkGp-3787npBEJcJblg&s" alt="대체텍스트">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2aRJR6dWUGsjhkUzKkGp-3787npBEJcJblg&s"
+      alt="대체텍스트"
+    />
     <!--href : hypertext reference-->
     <!--마크다운에서는 ![대체텍스트](이미지경로,source)-->
 
-    <br> <!--줄바꿈태그-->
-    <hr> <!--수평선-->
-</body>
+    <br />
+    <!--줄바꿈태그-->
+    <hr />
+    <!--수평선-->
+
+    <p>주석 작성법 : &lt;!-- --&gt; command + / 로 쓸 수 있음</p>
+
+    <h1>2. 속성(Attribute)</h1>
+    <!-- id 속성과 class 속성 -->
+    <!-- id 속성은 문서내에서 요소를 구별한 고유한 값(식별자) -->
+    <p id="1">1</p>
+    <p id="2">2</p>
+    <p>3</p>
+
+    <!-- class 속성은 문서내에서 요소를 그룹화하는 값 -->
+    <p class="1">4</p>
+    <p class="1">4</p>
+    <p class="5">5</p>
+    <p class="5">5</p>
+    <p>6</p>
+
+    <!-- id와 class의 값은 소문자 알파벳으로 시작해야한다. -->
+    <!-- 띄어쓰기가 불가능 -->
+    <!-- 필요에 따라 두개이상의 클래스를 지정할 수 있다. -->
+    <p class="fruit red">사과</p>
+    <p class="furit blue">포도</p>
+    <p class="animal">강아지</p>
+    <p class="animal">고양이</p>
+
+    <hr />
+
+    <!-- 요소 중첩 -->
+    <h1>3. division(분할)</h1>
+    <div> div : division(분할)</div>
+
+    <!-- 간단한 예시 -->
+    <div>
+      <div>
+        <h1>팀 버너스리</h1>
+        <h2>Berners-Lee</h2>
+      </div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sir_Tim_Berners-Lee.jpg/330px-Sir_Tim_Berners-Lee.jpg"
+        alt="버너스리 사진"
+      />
+      <div>
+        <p>출생</p>
+        <p>1955년 6월 8일(70세)</p>
+      </div>
+      <div>
+        <p>출신 학교</p>
+        <p>옥스퍼드 대학교 물리학 학사</p>
+      </div>
+      <div>
+        <p>배우자</p>
+        <p>낸시 칼슨(1990 ~ 2011)</p>
+        <p>로즈메리 리스(2014 ~ )</p>
+      </div>
+      <div>
+        <p>자녀</p>
+        <p>1남 1녀</p>
+      </div>
+      <div>
+        <p>수상</p>
+        <p>튜링상(2016)</p>
+        <p>메리트 훈장(2007)</p>
+        <p>대영 제국 훈장 2등급(2004)</p>
+        <p>왕립학회 회원(2001)</p>
+        <p>왕립공학학회 회원(2001)</p>
+        <p>왕립예술학회 회원 (2001)</p>
+        <p>영국 컴퓨터학회 최고회원(1995)</p>
+      </div>
+      <div>
+        <p>분야</p>
+        <p>컴퓨터 과학</p>
+      </div>
+      <div>
+        <p>소속</p>
+        <p>W3C</p>
+        <p>사우샘프턴 대학교</p>
+        <p>플레시</p>
+        <p>메사추세츠 공과대학교</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h1>4. span태그와 p태그</h1>
+
+    <p>p 태그</p>
+    <p>p 태그</p>
+    <p>p 태그</p>
+    <span>span 태그</span>
+    <span>span 태그</span>
+    <span>span 태그</span>
+
+    <p>
+      <span>
+        팀 버너스리 경
+      </span>
+      영국의 컴퓨터 과학자이다.
+    </p>
+
+    <h1>5. 리스트 태그</h1>
+    <!-- ul, ol, li -->
+    <ul>
+      <li>순서가 없는 태그 1</li>
+      <li>순서가 없는 태그 2</li>  
+    </ul>
+
+    <ol>
+      <li>순서가 있는 태그 1</li>
+      <li>순서가 있는 태그 2</li>
+    </ol>
+    
+  </body>
 </html>
