@@ -1,0 +1,55 @@
+.parent {
+    background-color: blue;
+    height: 600px;
+}
+/* % : 부모의 크기를 기준으로 */
+.child-1 {
+    background-color: red;
+    width: 50%;
+    height: 300px;
+}
+.child-2 {
+    background-color: yellow;
+    width: 25%;
+    height: 300px;
+}
+
+/* em */
+.parent-font {
+    font-size: 30px;
+}
+.child-font-1 {
+    /* 15px */
+    font-size: 0.5em;
+}
+.child-font-2{
+    /* 60px */
+    font-size: 2em;
+}
+.child-child-font-2 {
+    /* 120px */
+    font-size: 2em;
+}
+
+/* rem */
+.rem-font-1{
+    font-size: 0.5rem;
+}
+.rem-font-2 {
+    font-size: 2rem;
+}
+
+/* viewport */
+.full-height {
+    /* 사용자에게 보이는 화면 높이 만큼의 100% 높이 */
+    min-height: 100vh;
+    background-color: orange;
+}
+
+/* 상속과 비상속 속성 */
+.parent-div {
+    border: 7px solid red;
+}
+.child-div {
+    border: 4px solid black;
+}

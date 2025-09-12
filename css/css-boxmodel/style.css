@@ -1,0 +1,74 @@
+.padding-box {
+    /* 좌 우 상 하 공통 0.75rem */
+    /* padding: 0.75rem; */
+
+    /* 각 방향 개별 패딩 값 */
+    padding-left: 0.75rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+}
+
+.border {
+    /* 완만한 정도 */
+    border-radius: 2rem;
+    /* border-color: red;
+    border-width: 10px;
+    border-style: dashed; */
+
+    /* 너비 종류 색 한번에 지정 */
+    border: 10px dashed red ;
+}
+
+span {
+    margin:  20px;
+}
+
+.margin-1 {
+    height: 100px;
+    background-color: aqua;
+    /* 마진 중첩에 의해 무시됨 */
+    margin-bottom: 100px;
+}
+.margin-2 {
+    height: 100px;
+    background-color: palevioletred;
+    /* 마진 중첩에 의해 유지됨 */
+    margin-top: 200px;
+}
+.margin-3 {
+    height: 100px;
+    background-color: green;
+    margin-top: 100px;
+}
+
+/* box-sizing 속성 */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    margin-bottom: 2rem;
+    padding: 20px;
+}
+
+.content-box {
+    /* 너비와 높이의 계산을 */
+    /* 오로지 콘텐츠로만 계산한다. */
+    /* 기본값 */
+    box-sizing: content-box;
+}
+
+.border-box {
+    /* 너비와 높이의 계산을 */
+    /* 콘텐츠 + 패딩 + 테두리 계산한다 */
+    /* 직관적이기 때문에 선호 */
+    box-sizing: border-box;
+}
+
+/* box-sizing 기본값을 변경 */
+* {
+    box-sizing: border-box;
+    /* 초기화 */
+    margin: 0px;
+    padding: 0px;
+}

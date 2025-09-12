@@ -1,0 +1,55 @@
+.box-1 {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 2rem;
+}
+
+/* relative 포지션 */
+/* 기본적으로  */
+.relative {
+    position: relative;
+}
+
+.left-10 {
+    left: 100px;
+    top: 100px;
+}
+
+/* absolute 포지션 */
+/* 조상요소(relative, absolute, fixed) 필요 */
+.parent-box {
+    position: relative;
+    height: 300px;
+    background-color: lightpink;
+}
+
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-50 {
+    top: 50px;
+}
+.right-50 {
+    right: 50px;
+}
+
+/* fixed 포지션 */
+/* 위치값에 의해 고정되는 포지션 */
+.box-3 {
+    width: 200px;
+    height: 100px;
+    background-color: lightgrey;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0px;
+}
