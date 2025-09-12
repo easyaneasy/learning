@@ -1,0 +1,23 @@
+/* !important 속성때문에 p태그의 글씨는 파란색으로 나온다 */
+p {
+    color: blue !important;
+}
+p {
+    color: red;
+}
+/* 우선순위에 의해 그냥 span태그의 글씨는 빨간색으로 나온다 */
+span {
+    color: blue;
+}
+span {
+    color: red;
+}
+
+#bold {
+    font-weight: 700;
+    color: black;
+}
+.italic {
+    font-style: italic;
+    color: black;
+}

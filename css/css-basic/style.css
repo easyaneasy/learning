@@ -1,0 +1,10 @@
+
+h3 {
+    color: yellow;
+}
+
+/* * : 전체 선택자 */
+* {
+    font-size: 100px;
+}
+

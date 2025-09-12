@@ -1,0 +1,69 @@
+/* 클래스 선택자 */
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.blue {
+    color: blue;
+}
+.font-100 {
+    font-size: 100px;
+}
+.font-50 {
+    font-size: 50px;
+}
+
+/* 아이디 선택자 */
+#bold {
+    font-weight: 900;
+}
+
+/* 속성 선택자 */
+[href] {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+[href="https://www.naver.com"] {
+    color: green; 
+}
+
+/* 자식 선택자 : 바로 아래 자식 요소 */
+div > p {
+    font-style: italic;
+}
+
+#parent > .child {
+    color: violet;
+}
+
+/* 자손 선택자 : 특정 부모 요소 안에 있는 모든 하위 요소 선택 */
+body p {
+    text-decoration: underline;
+}
+
+/* 그룹 선택자 : 쉼표를 사용하여 여러개의 선택자를 동시에 선택 가능 */
+
+/* 혼합 선택자 */
+span.red {
+    color: lightcoral;
+}
+span.green {
+    color: brown;
+}
+/* input[type="text"] {
+
+} */
+
+/* 우선순위 */
+div {
+    font-size: 30px !important; 
+}
+#font-100 {
+    font-size: 100;
+}
+.font-90 {
+    font-size: 90px;
+}
