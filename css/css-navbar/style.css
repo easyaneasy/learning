@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.left {
+    color: white;
+    display: flex;
+    gap: 2rem;
+    padding-left: 2rem;
+    align-items: center;
+}
+
+.right { 
+    color: white;
+    display: flex;
+    gap: 2rem;
+    padding-right: 2rem;
+    align-items: center;
+}
