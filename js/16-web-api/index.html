@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-API</title>
+</head>
+<body>
+    <!-- 16-web-api/index.html -->
+
+    <!-- 요청을 보낼 수 있기 때문에 클라이언트 툴의 일종이라고 볼 수 있다 -->
+    <form action="https://jsonplaceholder.typicode.com/posts" method="GET"> <!--method 기본값 GET-->
+        <input type="text" name="userId"> <!--쿼리 파라미터가 됨-->
+        <input type="text" name="postId" />
+        <input type="submit" value="요청">
+    </form>
+</body>
+</html>
