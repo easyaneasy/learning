@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <div id="container">
+      <h1>Hello, World!</h1>
+    </div>
+    <script>
+      const container = document.querySelector("#container"); // 변수 container는 id가 container인 요소를 의미
+      const newH1 = document.createElement("h1"); // h1 태그인 요소를 생성해서 newH1에 저장
+      newH1.textContent = "Hello, DOM!"; // newH1["textContent"]와 동일 / newH1에 텍스트를 지정
+      container.appendChild(newH1); // newH1을 container의 자식요소로 만들겠다는 의미
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 이벤트 속성</title>
+</head>
+<body>
+    <!-- event-2.html -->
+    <button>클릭</button>
+    <input type="text">
+
+    <script>
+        // 태그명이 button인 요소를 선택하고 변수에 할당
+        const buttonTag = document.querySelector("button");
+
+        // DOM의 textContent 속성을 활용
+        buttonTag.textContent = "클릭 클릭";
+        
+        //DOM의 이벤트 속성을 활용해서 이벤트를 등록
+        buttonTag.onclick = () => {
+            alert("클릭 클릭");
+        }
+
+        // 태그명이 input인 요소를 선택하고 변수에 할당
+        const inputTag = document.querySelector("input");
+        // input의 oninput 이벤트가 발행하면 콘솔에 "입력" 문자열을 출력
+        inputTag.oninput = () => {
+            console.log("입력");
+        }
+    </script>
+</body>
+</html>
