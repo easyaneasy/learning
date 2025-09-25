@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 위임</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+      const ul = document.querySelector("ul");
+
+      for (let i = 0; i < 1000; i++) {
+        const li = document.createElement("li");
+        li.textContent = `${i}`;
+
+        li.addEventListener("click", (event) => {
+          console.log("이벤트 차단");
+          event.stopPropagation();
+        });
+
+        ul.append(li);
+      }
+  
+      ul.addEventListener("click", (event) => {
+        console.log(event.target);
+        console.log(event.currentTarget);
+      });
+    </script>
+</body>
+</html>
