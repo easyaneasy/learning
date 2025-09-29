@@ -10,7 +10,7 @@ import OnSubmit from './components/EventHandling/onSubmit';
 import Parent from './components/Props/Parent';
 import ProfileContainer from './components/PropsExample/ProfileContainer';
 import CardContainer from './components/PropsFunction/CardContainer';
-
+import FormContainer from './components/PropsFunction/FormContainer';
 
 // 예시
 import MyList from "./components/MyList";
@@ -38,7 +38,8 @@ export default function App() {
         {/* <Parent></Parent> */}
         {/* <ProfileContainer></ProfileContainer> */}
         
-        <CardContainer></CardContainer>
+        {/* <CardContainer></CardContainer> */}
+        <FormContainer></FormContainer>
     </div>
   );
 }
