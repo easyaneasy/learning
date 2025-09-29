@@ -2,31 +2,32 @@ import React from 'react';
 import Rule from "./components/JSX/Rule";
 import Interpolation from './components/JSX/Interpolation';
 import Header from "./components/Header";
+import OnClick from './components/EventHandling/onClick';
+import OnChange from './components/EventHandling/onChange';
+import OnSubmit from './components/EventHandling/onSubmit';
 
 // 예시
 import MyList from "./components/MyList";
 import MyButton from './components/MyButton';
 
+
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
 export default function App() {
+
   return (
     <div>
       {/* 컴포넌트 태그 */}
-      {/* <Header>
-
-      </Header>
-
-      <Rule>
-
-      </Rule>
-
-      <Interpolation>
-        
-      </Interpolation> */}
+      {/* <Header></Header>
+      <Rule></Rule>
+      <Interpolation></Interpolation> */}
 
       {/* 예시 */}
-      <MyList></MyList>
-      <MyButton></MyButton>
+      {/* <MyList></MyList>
+      <MyButton></MyButton> */}
+
+      <OnClick></OnClick>
+      <OnChange></OnChange>
+      <OnSubmit></OnSubmit>
     </div>
   );
 }
