@@ -2,9 +2,14 @@ import React from 'react';
 import Rule from "./components/JSX/Rule";
 import Interpolation from './components/JSX/Interpolation';
 import Header from "./components/Header";
+
 import OnClick from './components/EventHandling/onClick';
 import OnChange from './components/EventHandling/onChange';
 import OnSubmit from './components/EventHandling/onSubmit';
+
+import Parent from './components/Props/Parent';
+import ProfileContainer from './components/PropsExample/ProfileContainer';
+
 
 // 예시
 import MyList from "./components/MyList";
@@ -25,9 +30,13 @@ export default function App() {
       {/* <MyList></MyList>
       <MyButton></MyButton> */}
 
-      <OnClick></OnClick>
+      {/* <OnClick></OnClick>
       <OnChange></OnChange>
-      <OnSubmit></OnSubmit>
+      <OnSubmit></OnSubmit> */}
+
+      {/* <Parent></Parent> */}
+      <ProfileContainer></ProfileContainer>
+
     </div>
   );
 }
