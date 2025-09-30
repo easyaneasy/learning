@@ -19,6 +19,9 @@ import MyButton from './components/MyButton';
 // Children
 import Parent from './components/PropsChildren/Parent';
 
+// condition
+import Container from './components/Condition/Container';
+
 
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
 export default function App() {
@@ -44,7 +47,9 @@ export default function App() {
       {/* <CardContainer></CardContainer> */}
       {/* <FormContainer></FormContainer> */}
       
-      <Parent></Parent>
+      {/* <Parent></Parent> */}
+
+      <Container></Container>
 
     </div>
   );
