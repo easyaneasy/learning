@@ -20,7 +20,10 @@ import MyButton from './components/MyButton';
 import Parent from './components/PropsChildren/Parent';
 
 // condition
-import Container from './components/Condition/Container';
+// import Container from './components/Condition/Container';
+
+// list-rendering
+import Container from './components/List/Container';
 
 
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
@@ -48,7 +51,11 @@ export default function App() {
       {/* <FormContainer></FormContainer> */}
       
       {/* <Parent></Parent> */}
+      
+      {/* condition */}
+      {/* <Container></Container> */}
 
+      {/* list-rendering */}
       <Container></Container>
 
     </div>
