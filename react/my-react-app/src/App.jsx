@@ -23,8 +23,14 @@ import Parent from './components/PropsChildren/Parent';
 // import Container from './components/Condition/Container';
 
 // list-rendering
-import Container from './components/List/Container';
+// import Container from './components/List/Container';
 
+// state
+import Container from './components/State/Container';
+import StringState from './components/State/StringState';
+import NumberState from './components/State/NumberState';
+import ObjectState from './components/State/ObjectState';
+import ArrayState from './components/State/ArrayState';
 
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
 export default function App() {
@@ -56,8 +62,16 @@ export default function App() {
       {/* <Container></Container> */}
 
       {/* list-rendering */}
-      <Container></Container>
+      {/* <Container></Container> */}
 
+      {/* state */}
+      {/* <Container></Container> */}
+
+      <StringState></StringState>
+      <NumberState></NumberState>
+      <ObjectState></ObjectState>
+      <ArrayState></ArrayState>
+      
     </div>
   );
 }
