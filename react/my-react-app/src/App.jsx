@@ -33,7 +33,10 @@ import ObjectState from './components/State/ObjectState';
 import ArrayState from './components/State/ArrayState';
 
 // stateAdvanced
-import Container from './components/StateAdvanced/Container';
+//import Container from './components/StateAdvanced/Container';
+
+// useEffect
+import Container from './components/UseEffect/Container';
 
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
 export default function App() {
@@ -76,6 +79,9 @@ export default function App() {
       <ArrayState></ArrayState> */}
 
       {/* stateAdvanced */}
+      {/* <Container></Container> */}
+
+      {/* useEffect */}
       <Container></Container>
 
     </div>
