@@ -38,6 +38,11 @@ import ArrayState from './components/State/ArrayState';
 // useEffect
 import Container from './components/UseEffect/Container';
 
+// tmdb
+import MovieSearch from './components/TMDB/MovieSearch';
+import MovieDetail from './components/TMDB/MovieDetail';
+import MovieList from './components/TMDB/MovieList';
+
 // App 컴포넌트는 Header, Rule, Interpolation 컴포넌트와 중첩됐댜.
 export default function App() {
 
@@ -82,7 +87,12 @@ export default function App() {
       {/* <Container></Container> */}
 
       {/* useEffect */}
-      <Container></Container>
+      {/* <Container></Container> */}
+
+      {/* TMDB */}
+      {/* <MovieSearch></MovieSearch> */}
+      {/* <MovieDetail></MovieDetail> */}
+      <MovieList></MovieList>
 
     </div>
   );
