@@ -15,7 +15,7 @@ export default function AuthLayout() {
                 <NavLink className={({isActive}) => 
                     `${baseClass} ${isActive ? activeClass : ""}`
                     } 
-                    to="/auth">
+                    to="/auth" end>
                     인증 홈페이지
                 </NavLink>
                 <NavLink className={({isActive}) => 
