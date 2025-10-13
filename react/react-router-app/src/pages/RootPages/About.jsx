@@ -1,4 +1,4 @@
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 export default function About() {
     
@@ -9,15 +9,19 @@ export default function About() {
                 to="/" 
                 className={({isActive}) => {
                     return isActive ? "text-red-600 font-bold text-5xl" : "";
-                }}>홈</NavLink>
+                }}>
+                홈
+            </NavLink>
             <br />
             <NavLink 
                 to="/about"
                 className={({isActive}) => {
                     return isActive ? "text-red-600 font-bold text-5xl" : "";
-                }}>소개</NavLink>
+                }}>
+                소개
+            </NavLink>
             <br />
-            <Link to="/profile">프로필</Link>
+            <NavLink to="/profile">사용자 정보</NavLink>
         </div>
     )
 }

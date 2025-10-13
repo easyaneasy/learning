@@ -11,7 +11,7 @@ export default function Home() {
         <br />
         <Link to="/profile">사용자 정보</Link>
         <br />
-        <a href="https://www.naver.com">외부 서비스 이동</a>
+        {/* <a href="https://www.naver.com">외부 서비스 이동</a> */}
     </div>
   )
 }
