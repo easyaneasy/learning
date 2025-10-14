@@ -12,14 +12,15 @@ import ProtectedLayout from "../layout/ProtectedLayout";
 // 페이지 컴포넌트
 import Home from "../pages/RootPages/Home";
 import About from "../pages/RootPages/About";
-import Profile from "../pages/RootPages/Profile";
-import PostList from "../pages/RootPages/PostList";
-import PostDetail from "../pages/RootPages/PostDetail";
+import Profile from "../pages/DummyPages/Profile";
+import PostList from "../pages/DummyPages/PostList";
+import PostDetail from "../pages/DummyPages/PostDetail";
 
 import AuthHome from "../pages/AuthPages/AuthHome"
 import Login from "../pages/AuthPages/Login"
 import Signup from "../pages/AuthPages/Signup"
 
+import PATHS from "../constants/paths";
 
 // 경로 생성 함수
 const router = createBrowserRouter([
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
     //     Component: Profile,
     // }
     {
-        path: "/",
+        path: PATHS.ROOT.INDEX,
         Component: RootLayout,
         children: [
             {
@@ -44,15 +45,15 @@ const router = createBrowserRouter([
                 Component: Home,
             },
             {
-                path: "about",
+                path: PATHS.ROOT.ABOUT,
                 Component: About, 
             },
             {
-                path: "posts",
+                path: PATHS.ROOT.POSTS,
                 Component: PostList,
             },
             {
-                path: "posts/:postId",
+                path: PATHS.ROOT.POST_DETAIL,
                 Component: PostDetail,
             },
             {
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
                 // 보호할 경로와 컴포넌트 정의
                 children: [
                     {
-                        path: "profile",
+                        path: PATHS.ROOT.PROFILE,
                         Component: Profile,
                     }
                 ]
@@ -70,7 +71,7 @@ const router = createBrowserRouter([
     },
     // AuthLayout 경로 설정
     {
-        path: "/auth",
+        path: PATHS.AUTH.INDEX,
         Component: AuthLayout,
         children: [
             {
@@ -78,11 +79,11 @@ const router = createBrowserRouter([
                 Component: AuthHome,
             },
             {
-                path: "login",
+                path: PATHS.AUTH.LOGIN,
                 Component: Login, 
             },
             {
-                path: "signup",
+                path: PATHS.AUTH.SIGNUP,
                 Component: Signup, 
             }
         ]
