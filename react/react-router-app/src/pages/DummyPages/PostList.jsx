@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 // useSearchParams : 쿼리 파라미터 관리
 import { useSearchParams } from 'react-router-dom'
 
+import PATHS from '../../constants/paths'
+
 export default function PostList() {
 
     const [posts, setPosts] = useState([]);
@@ -45,14 +47,12 @@ export default function PostList() {
 
             {posts.map((post) => {
                 return (
-                    <Link key={post.id} to={`/posts/${post.id}`}>
-                        <div className='border p-2'>
-                            <p>Post ID : {post.id}</p>
-                            <p>Post Title : {post.title}</p>
-                        </div>
-                        
+                    <div key={post.id}>
+                        <Link to={PATHS.ROOT.getPostDetail(post.id)}>
+                            No. {post.id} - {post.title}
+                        </Link>
                         <br />
-                    </Link>
+                    </div>
                 )
             })}
         </div>
