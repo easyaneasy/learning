@@ -29,6 +29,9 @@ import rootRouters from "./routes/rootRoutes";
 // AuthLayout 관련 경로 배열 불러오기
 import authRouters from "./routes/authRoutes";
 
+// NotFound 처리
+import NotFound from "../pages/NotFound";
+
 // 경로 생성 함수
 const router = createBrowserRouter([
     // RootLayout 관련 경로
@@ -85,7 +88,11 @@ const router = createBrowserRouter([
     //         }
     //     ]
     // }
-    ...authRouters
+    ...authRouters,
+    {
+        path: "*", // 모든것에 매핑되는 특수문자
+        Component: NotFound,
+    }
 ]);
 
 // 라우터 내보내기
