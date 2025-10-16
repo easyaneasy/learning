@@ -21,7 +21,7 @@ export default function Login() {
     if(token){
         alert("로그인 성공");
         console.log(token);
-        navigate("/");
+        // navigate("/profile");
     }
   })
 
