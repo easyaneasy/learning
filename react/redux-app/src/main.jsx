@@ -9,10 +9,16 @@ import { Provider } from 'react-redux'
 // 스토어 설정
 import { store } from './store'
 
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
+
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <Provider store={store}>
+        {/* <Provider store={store}>
             <App />
+        </Provider> */}
+        <Provider store={store}>
+            <RouterProvider router={router}></RouterProvider>
         </Provider>
     </StrictMode>
 )
