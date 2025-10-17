@@ -35,29 +35,29 @@ const responseSchema = {
   };
 
 // 응답 파라미터 설정
-// const config = {
-//     temperature: 1, // 창의성 수준(0 ~ 1)
-//     maxOutputTokens: 1000,
-//     stopSquences: "\\n\\n",
-//     // 시스템 지침 속성
-//     systemInstruction: [
-//         "개발 관련 질문에만 답변하고, 다른 질문에 대해서 '죄송합니다. 답변할 수 없는 질문입니다.' 라고 응답한다",
-//     ],
-// }
+const config = {
+    temperature: 1, // 창의성 수준(0 ~ 1)
+    maxOutputTokens: 1000,
+    stopSquences: "\\n\\n",
+    // 시스템 지침 속성
+    systemInstruction: [
+        "개발 관련 질문에만 답변하고, 다른 질문에 대해서 '죄송합니다. 답변할 수 없는 질문입니다.' 라고 응답한다",
+    ],
+}
 
-const systemInstruction = [
-    `오늘 날짜: ${new Date().toISOString().split("T")[0]}`,
-    "당신은 할 일 관리 AI입니다. 오직 할 일이나 업무 관련 내용만 처리합니다.",
-    "JSON 형식으로 응답합니다.",
-    "할 일이 아닌 일반적인 대화, 인사, 질문은 무시하고, isMemo를 false로 설정합니다.",
-    "사용자의 질문을 이해할 수 없는 경우에는 isMemo를 false로 설정합니다.",
-    "응답할 때는 할 일 내용, 마감 날짜, 우선 순위, 할 일 종류를 포함한 객체를 생성합니다.",
-  ];
+// const systemInstruction = [
+//     `오늘 날짜: ${new Date().toISOString().split("T")[0]}`,
+//     "당신은 할 일 관리 AI입니다. 오직 할 일이나 업무 관련 내용만 처리합니다.",
+//     "JSON 형식으로 응답합니다.",
+//     "할 일이 아닌 일반적인 대화, 인사, 질문은 무시하고, isMemo를 false로 설정합니다.",
+//     "사용자의 질문을 이해할 수 없는 경우에는 isMemo를 false로 설정합니다.",
+//     "응답할 때는 할 일 내용, 마감 날짜, 우선 순위, 할 일 종류를 포함한 객체를 생성합니다.",
+//   ];
   
-  const config = {
-    responseMimeType: "application/json", // 응답 형식(확장자)
-    responseJsonSchema: responseSchema, // 응답 JSON 구조
-    systemInstruction: systemInstruction,
-  };
+//   const config = {
+//     responseMimeType: "application/json", // 응답 형식(확장자)
+//     responseJsonSchema: responseSchema, // 응답 JSON 구조
+//     systemInstruction: systemInstruction,
+//   };
   
   export { ai, chat, config };
