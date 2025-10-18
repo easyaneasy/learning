@@ -86,7 +86,7 @@ export default function Signup() {
                             required
                         />
                         <button type='submit' 
-                            className='w-full py-3 px-1 mt-5 bg-blue-600 text-white rounded cursor-pointer'
+                            className='w-full py-3 px-1 mt-5 bg-blue-600 text-white rounded cursor-pointer font-medium'
                         >
                             회원가입
                         </button>

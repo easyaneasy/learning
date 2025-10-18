@@ -13,9 +13,9 @@ export default function RootLayout() {
                     <NavLink to="" className=''>메모 목록</NavLink>
                 </div>
                 <div className='flex gap-3 items-center ml-auto'>
-                    <NavLink to="/login" className='bg-blue-100 px-5 py-2 rounded text-blue-600 font-medium'>로그인</NavLink>
+                    <NavLink to="/login" className='bg-blue-100 px-5 py-2 rounded text-blue-600'>로그인</NavLink>
                     {/* <NavLink className=''>로그아웃</NavLink> */}
-                    <NavLink to="/signup" className='bg-blue-600 px-5 py-2 rounded text-white font-medium'>회원가입</NavLink>
+                    <NavLink to="/signup" className='bg-blue-600 px-5 py-2 rounded text-white'>회원가입</NavLink>
                 </div>
             </nav>
         </div>
