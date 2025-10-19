@@ -72,6 +72,29 @@ const login = createAsyncThunk(
     }
 )
 
+// 로그아웃 비동기 처리
+const logout = createAsyncThunk(
+    "auth/logout",
+    async (_, {rejectWithValue, getState}) => {
+        try{
+            const config = {
+                url: `${SUPABASE_URL}/auth/v1/logout`,
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json",
+                    apikey: SUPABASE_ANON_KEY,
+                    // 사용자 인증 정보(토큰)
+                    Authorization: `Bearer ${getState().auth.token}`,
+                },
+            };
+            const res = await axios(config);
+            return res.data;
+        }catch(error){
+            return rejectWithValue(error.response.data);
+        }
+    }
+)
+
 // 비동기 처리 3개의 상태 : 대기, 성공, 실패
 
 // 초기 상태
@@ -105,12 +128,18 @@ const authSlice = createSlice({
         }).addCase(login.fulfilled, (state, action) => {
             // 로그인 성공
             state.token = action.payload["access_token"];
+            console.log("로그인 성공 저장된 토큰:", state.token);
         }).addCase(login.rejected, (state, action) => {
+            // 로그인 실패
             state.loginError = action.payload;
-        });
+        }).addCase(logout.fulfilled, (state) => {
+            // 로그아웃 성공
+            state.token = null;
+            console.log("로그아웃 성공 토큰 상태:", state.token);
+        })
     }
 });
 
 export const { resetIsSignup, clearLoginError } = authSlice.actions;
 export default authSlice.reducer;
-export { signup, login };
+export { signup, login, logout };
