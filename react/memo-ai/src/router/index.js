@@ -3,6 +3,8 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home";
 import Signup from "../pages/Signup";
 import Login from "../pages/Login";
+import CreateMemo from "../pages/CreateMemo"
+import MemoList from "../pages/MemoList"
 
 const router = createBrowserRouter([
     {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
             {
                 path: "login",
                 Component: Login,
+            },
+            {
+                path: "create-memo",
+                Component: CreateMemo,
+            },
+            {
+                path: "memo-list",
+                Component: MemoList,
             }
         ]
     }

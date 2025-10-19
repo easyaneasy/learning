@@ -19,8 +19,8 @@ export default function RootLayout() {
                 <nav className='flex p-4 shadow items-center'>
                     <div className='flex gap-6 items-center'>
                         <NavLink to="/" className='font-bold text-xl'>Memo AI</NavLink>
-                        <NavLink to="" className=''>메모 생성</NavLink>
-                        <NavLink to="" className=''>메모 목록</NavLink>
+                        <NavLink to="/create-memo" className=''>메모 생성</NavLink>
+                        <NavLink to="/memo-list" className=''>메모 목록</NavLink>
                     </div>
                     <div className='flex gap-3 items-center ml-auto'>
                         {!isLogin ? (

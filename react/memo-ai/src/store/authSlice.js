@@ -128,7 +128,7 @@ const authSlice = createSlice({
         }).addCase(login.fulfilled, (state, action) => {
             // 로그인 성공
             state.token = action.payload["access_token"];
-            console.log("로그인 성공 저장된 토큰:", state.token);
+            console.log("로그인 성공");
         }).addCase(login.rejected, (state, action) => {
             // 로그인 실패
             state.loginError = action.payload;
