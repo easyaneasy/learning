@@ -24,11 +24,11 @@ const router = createBrowserRouter([
                 Component: Login,
             },
             {
-                path: "create-memo",
+                path: "memo/create",
                 Component: CreateMemo,
             },
             {
-                path: "memo-list",
+                path: "memo/list",
                 Component: MemoList,
             }
         ]

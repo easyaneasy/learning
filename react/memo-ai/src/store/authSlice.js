@@ -97,9 +97,19 @@ const logout = createAsyncThunk(
 
 // 비동기 처리 3개의 상태 : 대기, 성공, 실패
 
+const loadTokenFromStorage = () => {
+    try {
+        const token = localStorage.getItem("authToken");
+        return token ? token : null;
+    } catch (e) {
+        console.error("Local Storage access error", e);
+        return null;
+    }
+};
+
 // 초기 상태
 const initialState = {
-    token: null, // 액세스 토큰 관리 상태
+    token: loadTokenFromStorage(), // 액세스 토큰 관리 상태
     error: null, // 에러 여부 관리 상태
     isSignup: false, // 회원가입 성공 여부 관리 상태
 }
@@ -128,6 +138,7 @@ const authSlice = createSlice({
         }).addCase(login.fulfilled, (state, action) => {
             // 로그인 성공
             state.token = action.payload["access_token"];
+            localStorage.setItem("authToken", action.payload["access_token"]);
             console.log("로그인 성공");
         }).addCase(login.rejected, (state, action) => {
             // 로그인 실패
@@ -135,6 +146,7 @@ const authSlice = createSlice({
         }).addCase(logout.fulfilled, (state) => {
             // 로그아웃 성공
             state.token = null;
+            localStorage.removeItem("authToken");
             console.log("로그아웃 성공 토큰 상태:", state.token);
         })
     }
