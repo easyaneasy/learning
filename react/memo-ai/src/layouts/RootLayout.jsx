@@ -19,8 +19,8 @@ export default function RootLayout() {
                 <nav className='flex p-4 shadow items-center'>
                     <div className='flex gap-6 items-center'>
                         <NavLink to="/" className='font-bold text-xl'>Memo AI</NavLink>
-                        <NavLink to="/create-memo" className=''>메모 생성</NavLink>
-                        <NavLink to="/memo-list" className=''>메모 목록</NavLink>
+                        <NavLink to="/memo/create" className=''>메모 생성</NavLink>
+                        <NavLink to="/memo/list" className=''>메모 목록</NavLink>
                     </div>
                     <div className='flex gap-3 items-center ml-auto'>
                         {!isLogin ? (
@@ -28,7 +28,7 @@ export default function RootLayout() {
                                 <NavLink to="/login" className='bg-blue-100 px-5 py-2 rounded text-blue-600'>로그인</NavLink>
                                 <NavLink to="/signup" className='bg-blue-600 px-5 py-2 rounded text-white'>회원가입</NavLink>
                             </> 
-                            ) : (
+                        ) : (
                                 <button
                                     onClick={handleLogout}
                                     className='bg-gray-200 px-5 py-2 rounded cursor-pointer'
