@@ -62,11 +62,25 @@ export default function CreateMemo() {
         }
     }
 
-     // 메모 생성 확인
     function handleMemoConfirm() {
         if (pendingMemo) {
-            // 메모 저장
-            setSavedMemos((prev) => [...prev, pendingMemo]);
+            // 로컬 스토리지에서 기존 메모 목록을 불러오기
+            const existingMemosJson = localStorage.getItem('memos');
+            // JSON 파싱. 메모가 없으면 빈 배열([])로 시작
+            const existingMemos = existingMemosJson ? JSON.parse(existingMemosJson) : [];
+    
+            // 새로운 메모를 목록에 추가
+            const updatedMemos = [...existingMemos, pendingMemo];
+            
+            try {
+                // 로컬 스토리지에 메모 저장
+                localStorage.setItem('memos', JSON.stringify(updatedMemos));
+                console.log("로컬 스토리지에 메모 저장 완료:", updatedMemos.length);
+            } catch (error) {
+                console.error("로컬 스토리지 저장 오류:", error);
+            }
+    
+            setSavedMemos(updatedMemos); 
             
             // 성공 메시지 추가
             setMessages((prev) => [
