@@ -51,7 +51,10 @@ export default function CreateMemo() {
                 // 메모가 아니라면 일반 AI 응답으로 처리
                 setMessages((prev) => [
                 ...prev, 
-                { role: "ai", content: aiData.content || "메모로 저장하기 어려운 내용입니다." }
+                { 
+                    role: "ai", 
+                    content: "다시 입력해주세요."
+                }
                 ]);
             }
         }catch(error){

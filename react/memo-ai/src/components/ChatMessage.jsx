@@ -6,12 +6,12 @@ export default function ChatMessage({message}) {
 
   return (
     <div className={`mb-3 ${isUser ? 'flex justify-end' : ''}`}>
-      <div className={`inline-block max-w-[80%] px-4 py-3 rounded-lg ${
+      <div className={`inline-block mx-10 px-4 py-3 rounded-lg ${
         isUser 
           ? 'bg-white text-gray-800 shadow-sm border border-gray-200' 
-          : 'bg-gray-100 text-gray-800'
+          : 'bg-gray-100 text-gray-800 shadow-sm border border-gray-200'
       }`}>
-        <p className="text-sm leading-relaxed whitespace-pre-wrap">
+        <p>
           {message.content}
         </p>
       </div>

@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function MemoConfirmCard({ memo, onConfirm, onCancel }) {
   return (
-    <div className="mb-3">
+    <div className="mb-3 mx-10">
         {/* AI 안내 메시지 */}
-        <div className="bg-gray-100 inline-block max-w-[80%] px-4 py-3 rounded-lg mb-3">
-            <p className="text-sm text-gray-800">
+        <div className="bg-gray-100 inline-block px-4 py-3 rounded-lg mb-3 text-gray-800 shadow-sm border border-gray-200">
+            <p>
                 사용자의 입력을 처리했습니다. 아래 메모를 생성할까요?
             </p>
         </div>
