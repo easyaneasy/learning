@@ -33,9 +33,9 @@ export default function MemoConfirmCard({ memo, onConfirm, onCancel }) {
                 <div className="flex items-center gap-2 mb-3">
                     <span className="text-sm text-gray-500">우선순위:</span>
                     <span className={`text-xs px-2 py-1 rounded ${
-                        memo.priority === 'High' ? 'bg-red-100 text-red-800' :
-                        memo.priority === 'Medium' ? 'bg-yellow-100 text-yellow-800' :
-                        'bg-green-100 text-green-800'
+                        memo.priority === '높음' ? 'bg-red-100 text-red-800' :
+                        memo.priority === '중간' ? 'bg-yellow-100 text-yellow-800' :
+                        'bg-sky-100 text-sky-800'
                     }`}>
                         {memo.priority}
                     </span>
@@ -47,9 +47,9 @@ export default function MemoConfirmCard({ memo, onConfirm, onCancel }) {
                     <div className="flex items-center gap-2">
                         <span className="text-sm text-gray-500">카테고리:</span>
                         <span className={`text-xs px-2 py-1 rounded ${
-                            memo.category === 'ToDo' ? 'bg-blue-100 text-blue-800' :
-                            memo.category === 'Work' ? 'bg-purple-100 text-purple-800' :
-                            'bg-green-100 text-green-800'
+                            memo.category === '할 일' ? 'bg-blue-100 text-blue-800' :
+                            memo.category === '업무' ? 'bg-purple-100 text-purple-800' :
+                            'bg-orange-100 text-orange-800'
                         }`}>
                             {memo.category}
                         </span>
